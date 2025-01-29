@@ -20,5 +20,15 @@ namespace JobApplicationTracker
         {
             InitializeComponent();
         }
+
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
+            {
+                MessageBox.Show(clickedButton.Name);
+            }
+                MessageBox.Show("Button clicked!");
+        }
     }
 }
